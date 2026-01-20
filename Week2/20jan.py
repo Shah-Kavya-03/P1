@@ -49,8 +49,32 @@ def bill():
         bill=300+(3*(units-200))
         print("Your Bill is Rs. ",bill)
 
-def main():
-    
+def cumulative():
+    num=[3,5,2,4,1]
+    res=[]
+    sum=0
+    for i in num:
+        sum+=i
+        res.append(sum)
+    print(res)
 
+def unique():
+    input = [2,5,4,2,8,9,5,6,3,2,4]
+    res=[]
+    for i in input:
+        if input.count(i)>=1 and i not in res:
+            res.append(i)
+    print(res)
+
+def dup():
+    input = [2,5,4,2,8,9,5,6,3,2,4]
+    res=[]
+    for i in input:
+        if input.count(i)>1:
+            input.pop(i)
+    print(input)
+
+def main():
+    dup()
 if __name__=="__main__":
     main()
