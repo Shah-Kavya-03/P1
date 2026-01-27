@@ -76,5 +76,6 @@ def dup():
 
 def main():
     dup()
+
 if __name__=="__main__":
     main()
