@@ -56,7 +56,10 @@ def unique():
 def even():
     #8. Even Numbers from List
     inp = [1, 2, 3, 4, 5, 6]
-    out = [num for num in inp if num % 2 == 0]
+    out = []
+    for num in inp:
+        if num % 2 == 0:
+            out.append(num)
     print(out,"\n")
 
 def studavg():
@@ -91,6 +94,7 @@ def highestsell():
     print(out,"\n")
 
 def uniquevaluesextractor():
+    #12. Unique Values Extractor
     inp = {"a": [1, 2, 3], "b": [3, 4], "c": [2, 5]}
     unique = set()
     for values in inp.values():
@@ -99,6 +103,7 @@ def uniquevaluesextractor():
     print(out,"\n")
 
 def attendancepercentage():
+    #13. Attendance Percentage Calculator
     inp = {"Ravi": ["P","P","A"], "Neha": ["P","P","P"]}
     out = {}
     for name, attendance in inp.items():
@@ -107,6 +112,7 @@ def attendancepercentage():
     print(out,"\n")
 
 def charindex():
+    #14. Character Index Mapping
     inp = "banana"
     out = {}
     for index, char in enumerate(inp):
@@ -117,6 +123,7 @@ def charindex():
     print(out,"\n")
 
 def dictvaluemerger():
+    #15. Dictionary Value Merger
     inp = [{"a": 2, "b": 3}, {"a": 4, "c": 1}]
     out = {}
     for d in inp:
@@ -128,6 +135,7 @@ def dictvaluemerger():
     print(out,"\n")
 
 def rem():
+    #16. Remove Duplicates and Count
     inp = [0,0,1,1,1,2,2,3,3,4]
     out = []
     flag = 0
