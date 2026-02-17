@@ -74,7 +74,7 @@ def sales():
     ]
     n = filter(lambda r: r["region"] == "North", regions)
     n = map(lambda x: x["stores"],n)
-    n = map(lambda x: x["transactions"],n)
+    n = filter(lambda x: x["transactions"],n)
     print(list(n))
     """en = filter(lambda x: x["successful"] and x["category"]=="Electronics" and x["amount"]>=100,n)
     print(en)
