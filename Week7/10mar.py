@@ -69,8 +69,7 @@ class Manager(Employee):
         print("Total Annual Salary: ",self.total_salary())
 
 def main():
-    """
-    Problem  1: Student Information System
+    #Problem  1: Student Information System
     x=Student(1,"Swayam",2,60,60)
     x.getdata()
     x.avrmarks()
@@ -78,13 +77,15 @@ def main():
     y.getdata()
     y.avrmarks()
 
-    Problem 2: Vehicle Management System
+    #Problem 2: Vehicle Management System
     c1 = Car(101,"Toyota",20000,4,"Petrol")
     c1.display_car_details()
+    print()
     c2 = Car(102,"Honda",25000,4,"Diesel")
     c2.display_car_details()
+    print()
 
-    Problem 3: Employee Management System
+    #Problem 3: Employee Management System
     Employee_list = []
     m1 = Manager(1,"Alice",5000,"HR",10000)
     m2 = Manager(2,"Bob",6000,"IT",15000)
@@ -93,7 +94,6 @@ def main():
     m1.display_manager()
     print()
     m2.display_manager()
-    """
 
 if __name__ == "__main__":
     main()
